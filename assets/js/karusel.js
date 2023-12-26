@@ -42,8 +42,8 @@ $(document).ready(function () {
         //margin: 30, //Отступ от картино если выводите больше 1
         nav: true, //Отключил навигацию
         navText: [
-            '<img src="/assets/img/projects-slider/arrow-left.svg" alt="arrow-left">',
-            '<img src="/assets/img/projects-slider/arrow-right.svg" alt="arrow-righ">',
+            '<img src="assets/img/projects-slider/arrow-left.svg" alt="arrow-left">',
+            '<img src="assets/img/projects-slider/arrow-right.svg" alt="arrow-righ">',
         ],
         //autoplay: true, //Автозапуск слайдера
         center: true,
