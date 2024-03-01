@@ -218,6 +218,11 @@ legend {
   max-width: 100% !important;
 }
 
+.--full-image {
+  width: 900px !important;
+  height: 600px !important;
+}
+
 .main-block-image img {
   filter: brightness(20%)
 }
@@ -648,14 +653,70 @@ legend {
 }
 
 .page-main-block__subtitle {
-  padding: 40px 0 290px 0;
+  padding: 40px 0 219px 0;
   font-size: 18px;
 
   font-weight: 400;
 
 }
 
-.page-content-block {}
+.page-main-block__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+
+.page-main-block__link {
+  position: relative;
+  border: 1px solid #8375de;
+  border-radius: 10px 0 0 0;
+  width: 201px;
+  height: 65px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  transition: all .2s ease 0s;
+}
+
+
+.page-main-block__link:hover {
+  color: rgb(180, 179, 238);
+  background: rgba(83, 83, 83, 0.125);
+  border-top: 1px solid #D1A534;
+  border-left: 1px solid #D1A534;
+  transition: all .2s ease 0s;
+  border-radius: 0 10px 0 0;
+
+}
+
+
+
+
+
+
+
+
+.page-main-block__link span {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -2349,7 +2410,7 @@ legend {
   top: 70px;
   left: 18px;
 
-  background: url(assets/img/Arrow-28.svg) no-repeat;
+  background: url(/assets/img/Arrow-28.svg) no-repeat;
   width: 12px;
   height: 335px;
 }
@@ -2392,7 +2453,7 @@ legend {
 .map-block {
   display: flex;
   max-width: 935px;
-
+  border-radius: 5px;
   justify-content: space-between;
 }
 
@@ -2564,6 +2625,7 @@ legend {
 .block-contacts-map iframe {
   background: lightgray 50% / cover no-repeat;
   box-shadow: 0px 0px 12.5px 2px #8375DE;
+  border-radius: 5px;
 }
 
 .page-selection-block__company-numbers {}
@@ -3397,6 +3459,33 @@ legend {
 
 }
 
+.page-chipboard-milling-video_block {
+  max-width: 822px;
+  padding: 50px 0 0 0;
+  margin: 0 auto;
+}
+
+.page-chipboard-milling-video_item {
+  position: relative;
+
+  padding-top: 56.23%;
+  outline: 0.5px solid #8375DE;
+  background: #F6F6F6;
+  box-shadow: 0px 0px 14px 0px #8375DE;
+}
+
+.page-chipboard-milling-video_item iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border: none;
+
+}
+
 
 
 
@@ -3432,6 +3521,10 @@ legend {
 @media(max-width: 1024px) {
   .method-order-row {
     max-width: 52.6%;
+  }
+
+  .page-main-block__link {
+    font-size: 14px;
   }
 }
 
@@ -3976,6 +4069,23 @@ legend {
   .page-order-calculation-block_position-image {
     margin: 0;
   }
+
+  .page-main-block__subtitle {
+    padding: 40px 0;
+  }
+
+  .page-main-block__links {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+    padding: 0 0 20px 0;
+  }
+
+  .page-main-block__link {
+    width: 100%;
+    height: 40px;
+    border-radius: 0 0 0 0;
+  }
 }
 
 @media(max-width: 645px) {
@@ -4088,7 +4198,7 @@ legend {
   }
 
   .page-main-block__subtitle {
-    padding: 25px 0 190px 0;
+    padding: 25px 0;
     font-size: 14px;
     font-weight: 300;
 
