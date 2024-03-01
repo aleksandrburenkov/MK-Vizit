@@ -106,7 +106,7 @@ function closeModal(e) {
     if (
         e.target.classList.contains('modal-close-wrapper') ||
         e.target.classList.contains('modal-close') ||
-        e.target.classList.contains('modal-bg') // закрытие по клику на фон
+        e.target.classList.contains('modal-bg')
     ) {
         e.target.closest('.modal-order').classList.remove('_modal-active');
         document.body.classList.remove('no-scroll');
